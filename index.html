@@ -1,55 +1,77 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Макет интерфейса со стороны пользователя</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <link href="css/buttons.css" type="text/css" rel="stylesheet">
+    <title>Рецензирование текста научно-исследовательских работ</title>
 
+    <link href="css/buttons.css" type="text/css" rel="stylesheet">
+    <link href="css/modal.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div id="header">
-        <div id="nameProject"><p>Рецензирование текста
-            научно-исследовательской работы</p></div>
-        <div id="header_buttons">
-            <button><span>Запрос на добавление</span></button>
-            <button><span>Авторизоваться</span></button>
-            <button><span>Настройки оформления</span></button>
+<div>
+    <header>
+        <div id="header">
+            <div id="nameProject"><p>Рецензирование текста
+                научно-исследовательской работы</p></div>
+            <div id="header-buttons">
+                <button class="button-main"><span>Запрос на добавление</span></button>
+                <button class="button-main"><span>Авторизоваться</span></button>
+                <button id="button-decoration" class="button-main"><span>Настройки оформления</span></button>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<div id="content">
-    <div id="page-left-side">
-        <h3>Обработанный текст</h3>
-        <div class="textarea-container">
-            <p id="incorrect"> <em >Для выполнения поставленной цели
-                предполагается разработать веб–сервис, предоставляющий автоматическую проверку написанного текста
-                научно–исследовательской работы. Для проверки текста на содержание ошибок, приложение должно позволять
-                научному руководителю добавлять слова, которые не должны встречаться в научно–исследовательских работах,
-                в базу приложения.</em></p>
-            <p>Благодаря возможности добавления такой особенности в приложение, рецензирование научно–исследовательских
-                работ будет проходить легче, чем с приложением, содержащим базовые слова без возможности их
-                пополнения.</p>
-            <p>Процесс рецензирования текста научно–исследовательских работ студентов будет заключаться в проверке
-                написанного текста на наличие в нем грамматических ошибок и на содержание недопустимы слов для научных
-                текстов.</p>
+    <div id="content">
+        <div id="page-left-side">
+            <h3>Обработанный текст</h3>
+            <div class="textarea-container">
+                <p id="incorrect"><em>Для выполнения поставленной цели
+                    предполагается разработать веб–сервис, предоставляющий автоматическую проверку написанного текста
+                    научно–исследовательской работы. Для проверки текста на содержание ошибок, приложение должно
+                    позволять
+                    научному руководителю добавлять слова, которые не должны встречаться в научно–исследовательских
+                    работах,
+                    в базу приложения.</em></p>
+                <p>Благодаря возможности добавления такой особенности в приложение, рецензирование
+                    научно–исследовательских
+                    работ будет проходить легче, чем с приложением, содержащим базовые слова без возможности их
+                    пополнения.</p>
+                <p>Процесс рецензирования текста научно–исследовательских работ студентов будет заключаться в проверке
+                    написанного текста на наличие в нем грамматических ошибок и на содержание недопустимы слов для
+                    научных
+                    текстов.</p>
+            </div>
+            <button class="button-main"><span>Загрузить файл</span></button>
+        </div>
+        <div id="page-right-side">
+            <h3>Информация об ошибке в оформлении</h3>
+            <div class="textarea-info">
+                <p><b>Необходимо изменить на:</b></p>
+                <p>Шрифт 18</p>
+                <p>Добавить отступ 0.2</p>
+                <p>Выравнивание текста по ширине</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p></p>
+    </footer>
+    <div id="modal-decoration" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">x</span>
+                <h2>Настройка оформления</h2>
+            </div>
+            <div class="modal-body">
+                <p>Текст</p>
+                <button class="button-modal" id="button-modal-ok">Принять</button>
+                <button class="button-modal" id="button-modal-cancel">Закрыть</button>
+            </div>
         </div>
     </div>
-    <div id="page-right-side">
-        <h3>Информация об ошибке в оформлении</h3>
-        <div class="textarea-info">
-            <p><b>Необходимо изменить на:</b></p>
-            <p>Шрифт 18</p>
-            <p>Добавить отступ 0.2</p>
-            <p>Выравнивание текста по ширине</p>
-        </div>
-    </div>
-    <button><span>Загрузить файл</span></button>
 </div>
-<footer>
-    <p>Маке интерфейса со стороны пользователя</p>
-</footer>
-
+<script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>

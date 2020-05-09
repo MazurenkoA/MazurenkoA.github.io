@@ -1,0 +1,100 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Рецензирование текста научно-исследовательских работ</title>
+
+    <link href="css/buttons.css" type="text/css" rel="stylesheet">
+    <link href="css/modal.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/select.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <header>
+        <div id="header">
+            <div id="nameProject"><p>Рецензирование текста
+                научно-исследовательской работы</p></div>
+            <div id="header-buttons">
+                <button class="button-main"><span>Запрос на добавление</span></button>
+                <button class="button-main"><span>Авторизоваться</span></button>
+                <button id="button-decoration" class="button-main"><span>Настройки оформления</span></button>
+            </div>
+        </div>
+    </header>
+
+    <div id="content">
+        <div id="page-left-side">
+            <h3>Обработанный текст</h3>
+            <div class="textarea-container">
+
+            </div>
+            <button class="button-main"><span>Загрузить файл</span></button>
+        </div>
+        <div id="page-right-side">
+            <h3>Информация об ошибке в оформлении</h3>
+            <div class="textarea-info">
+                <h3>Необходимо изменить на:</h3>
+
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p></p>
+    </footer>
+    <div id="modal-decoration" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">x</span>
+                <h2>Настройка оформления</h2>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <p>Выберите стиль:
+                    <select name="select-style">
+                        <option>Заголовок</option>
+                        <option>Подзаголовк</option>
+                        <option>Обычный текст</option>
+                    </select>
+                    </p>
+                </div>
+                <p>Шрифт:
+                    <select name="select-font">
+                        <option>Times New Roman</option>
+                        <option>Calibri</option>
+                        <option>Aria</option>
+                        <option>Courier New</option>
+                    </select>
+                </p>
+                <p>Размер шрифта:
+                    <select name="select-font-size">
+                        <option>12</option>
+                        <option>14</option>
+                        <option>16</option>
+                        <option>18</option>
+                        <option>20</option>
+                        <option>24</option>
+                    </select>
+                </p>
+
+                <p>Выравнивание текста:
+                    <select name="select-font-size">
+                        <option>по левому краю</option>
+                        <option>по центру</option>
+                        <option>по правому краю</option>
+                        <option>по ширине</option>
+                    </select>
+                </p>
+
+                <div>
+                    <button class="button-modal" id="button-modal-ok">Принять</button>
+                    <button class="button-modal" id="button-modal-cancel">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

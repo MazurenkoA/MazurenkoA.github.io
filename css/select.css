@@ -1,0 +1,10 @@
+/* The container must be positioned relative: */
+select {
+    position: relative;
+
+    text-align: center;
+}
+
+select {
+    background-color: #F87357;
+}
